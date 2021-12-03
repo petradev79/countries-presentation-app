@@ -1,0 +1,13 @@
+// MEDIA QUERY MANAGER
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab {
+    @media only screen and (min-width: 48em) {
+      @content;
+    } // 768px
+  }
+  @if $breakpoint == lap {
+    @media only screen and (min-width: 80em) {
+      @content;
+    } // 1280px
+  }
+}
